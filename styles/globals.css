@@ -1,0 +1,67 @@
+@tailwind components;
+@tailwind base;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans,'Poppins', Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Date Time input Field */
+.rdrDefinedRangesWrapper {
+  display: none;
+}
+
+/* Click button number input Chrome, Safari, Edge, Opera  */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*  Click button number input Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+ 
+.mapboxgl-popup-close-button{
+  font-size: 25px;
+}
+.mapboxgl-popup-content{
+  border-radius: 12px !important;
+  background-color: rgb(240, 248, 248) !important;
+  border: 1px solid rgb(49, 48, 48) !important;
+}
+
+@media (max-width: 400px) {
+  input,
+  input::-webkit-input-placeholder {
+    font-size: 12px;
+    padding-left:3px
+  }
+}
+
+@layer components {
+    .button {
+        @apply px-1 sm:px-4 sm:py-2 border border-blue-200 rounded-full
+        cursor-pointer hover:shadow-lg active:scale-95
+        active:bg-gray-100 focus:bg-gray-100 transition transform duration-100 ease-out;
+    }
+    .navItem {
+        @apply text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100;        
+    }
+    
+}
+

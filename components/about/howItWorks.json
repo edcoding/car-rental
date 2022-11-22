@@ -1,0 +1,22 @@
+[{
+        "id": 1,
+        "name": "Find the perfect car",
+        "image": "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
+        "alt": "CARD1",
+        "description": "Browse too many cars shared by hosts based on and date and city."
+    },
+    {
+        "id": 2,
+        "name": "Rent your Car",
+        "image": "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
+        "alt": "CARD1",
+        "description": "Book you car."
+    },
+    {
+        "id": 3,
+        "name": "Hit the road",
+        "image": "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
+        "alt": "CARD1",
+        "description": "Pick it up you car from the host's location. Ready to travel."
+    }
+]

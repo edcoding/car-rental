@@ -1,0 +1,90 @@
+.map_container {
+    height: 400px;
+    width: 650px;
+}
+
+@media (min-width:320px) and (max-width:480px) {
+    .map_container {
+        height: 500px;
+        width: 99%;
+    }
+}
+
+@media (min-width:480px) and (max-width:768px) {
+    .map_container {
+        height: 500px;
+        width: 99%;
+    }
+}
+
+.map {
+    height: 100%;
+    width: 100%;
+}
+
+.sidebar {
+    background-color: rgba(46, 58, 70, 0.9);
+    color: #fff;
+    padding: 6px 6px;
+    font-family: monospace;
+    z-index: 1;
+    position: relative;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+/* IMG */
+.img_area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(195, 195, 195);
+    border-style: dashed;
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.upload_img_input {
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+}
+
+/* .plus {
+    width: 30px;
+    height: 30px;
+    background-image: url("../public/logos/upload.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+} */
+
+.uploaded_img {
+    width: 2000px;
+    height: 100px;
+    z-index: 3;
+}
+
+.not_uploaded {
+    display: none;
+}
+
+.delete_img {
+    position: relative;
+    right: 25px;
+    /* background-image: url("../public/images/ic_delete_white.png");  
+    background-repeat: no-repeat;  */
+}
+
+.delete_img_before {
+    display: none;
+}
+
+.fileInput
+{
+    text-indent: -999em;
+    outline: none;
+    position: absolute;
+}

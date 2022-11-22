@@ -1,0 +1,34 @@
+@charset "UTF-8";
+ 
+.likeBtn {
+  display: inline-block;
+  position: relative;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.likeBtn::before {
+  font-size: 1.5em;
+  color: rgb(170, 165, 165);
+  content: "♥";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.likeBtn::after {
+  font-size: 1.55em;
+  color: #ff3252;
+  content: "♥";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.2s;
+}
+
+.likeBtn.liked::after {
+  transform: translate(-50%, -50%) scale(1.1);
+}
